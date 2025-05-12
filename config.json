@@ -1,0 +1,13 @@
+{
+    "params": {
+        "local_server": "True",
+        "local_uri": "mysql+mysqlconnector://root:@localhost/CODEBRAIN_AI",
+        "prod_uri": "mysql+mysqlconnector://root:@localhost/CODEBRAIN_AI",
+        "gmail_user": "aftablamkhan8932@gmail.com",
+        "gmail_password": "vrny nfou vhcg gkdc",
+        "no_of_post": 2,
+        "admin_user": "aftab_alam786",
+        "admin_pass": "aftab.786",
+        "upload_location": "E:\\desktop\\Flask\\static\\assets\\img"
+    }
+}

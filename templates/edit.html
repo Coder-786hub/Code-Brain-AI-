@@ -1,0 +1,68 @@
+{% extends "layout.html" %}
+{% block body %}
+        <!-- Page Header-->
+        <header class="masthead" style="background-image: url('{{ url_for('static', filename = 'assets/img/home-bg.jpg') }} ')">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="site-heading">
+                            <h1>Admin Panel</h1>
+                            <span class="subheading">Manage your posts and change them</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Main Content-->
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-md-10 col-lg-8 col-xl-7">
+                    
+                    <a href="/dashboard"><button class="btn btn-primary"> Dashboard Home</button></a>
+                    <a href="/logout"><button class="btn btn-primary"> Logout</button></a> 
+                    <hr>
+
+        <h1>Add/Edit Posts</h1>         
+            <form name = 'sentMeaase' id="contactForm"  action="/edit/{{post.sno}}", method="post" novalidate>
+                                <div class="form-floating">
+                                    <input class="form-control" id="title" name = 'title' type="text" placeholder="Enter your title..." data-sb-validations="required" value="{{post.title}}" />
+                                    <label for="name">Title</label>
+                                    
+                                </div>
+                                <div class="form-floating">
+                                    <input class="form-control" id="stile" name = 'stitle' type="stitle" placeholder="Enter your sub title..." value="{{post.sub_title}}"/>
+                                    <label for="text">Sub Title</label>
+                                    
+                                </div>
+                                <div class="form-floating">
+                                    <input class="form-control" id="slug" name = 'slug' type="tel" placeholder="Enter your slug..." data-sb-validations="required" value="{{post.slug}}"/>
+                                    <label for="text">Slug</label>
+                                </div>
+                                <div class="form-floating">
+                                    <textarea class="form-control" id="content" name = 'content' placeholder="Enter your content here..." style="height: 12rem" data-sb-validations="required">{{post.content}}</textarea>
+                                    <label for="text">Content</label>
+                                
+                                </div>
+                                <div class="form-floating">
+                                    <input class="form-control" id="img_file" name = 'img_file' placeholder="upload your image here..." value="{{post.img_file}}"></input>
+                                    <label>Image File</label>
+                                </div>
+                                <br />
+                                <div id="success"></div>
+                                <div class="form-group"></div>
+                                <!-- Submit Button-->
+                                <button class="btn btn-primary text-uppercase" id="submitButton" type="submit">Submit</button>
+                            </form>
+
+
+                  
+                </tbody>
+              </table> 
+                   
+                   
+          
+                    
+                </div>
+            </div>
+        </div>
+        {% endblock %}

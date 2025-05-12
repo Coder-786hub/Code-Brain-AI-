@@ -1,0 +1,43 @@
+{% extends "layout.html" %}
+{% block body %}
+        <!-- Page Header-->
+        <header class="masthead" style="background-image: url(' {{ url_for('static', filename = 'assets/img/about-bg.jpg') }}')">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="page-heading">
+                            <h1>About Me</h1>
+                            <span class="subheading">This is what I do.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Main Content-->
+        <main class="mb-4">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <section class="about-content">
+				        <p>Hi! I’m Aftab Alam, a BCA student from J.S. University, specializing in Artificial Intelligence and Machine Learning. My journey in tech has fueled my passion for Python programming and AI, leading me to build projects that bridge the gap between technology and real-world applications.</p>
+
+				        <h3>Projects I've Worked On</h3>
+				        <ul>
+				            <li><strong>Voice Assistant</strong> - A voice-controlled assistant that can perform a wide range of tasks, from managing schedules to providing information on demand.</li>
+				            <li><strong>Billing Software</strong> - A comprehensive billing system built using Python and Tkinter, with MySQL integration for storing and managing billing details.</li>
+				            <li><strong>Employee Management System</strong> - A tool to manage employee data efficiently, including features for tracking performance and managing records.</li>
+				            <li><strong>Resume Parsing & Job Recommendation System</strong> - A machine learning model that parses resumes to extract contact information, skills, and education, and recommends suitable job roles.</li>
+				            <li><strong>Medicine Recommendation System</strong> - A Python application using Tkinter that suggests medicines based on symptoms and conditions entered by users.</li>
+				            <li><strong>Email Spam Checker</strong> - A classification model that filters spam emails using natural language processing techniques.</li>
+				            <li><strong>Fake News Detection</strong> - A project that uses machine learning to identify and classify news articles as real or fake.</li>
+				            <li><strong>Brain Tumor Classification</strong> - A deep learning model designed to detect and classify brain tumors from medical images.</li>
+				            <li><strong>Object Detection System</strong> - An object detection project using YOLOv3 for identifying and locating objects within images or videos.</li>
+				        </ul>
+
+				        <p>Each of these projects represents a step forward in my journey to apply AI in meaningful ways. Through CodeBrain AI, I hope to share my experiences, tutorials, and insights with others who are equally passionate about technology.</p>
+				    </section>
+                    </div>
+                </div>
+            </div>
+        </main>
+        {% endblock %}
